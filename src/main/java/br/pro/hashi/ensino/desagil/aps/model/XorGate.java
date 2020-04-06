@@ -8,7 +8,7 @@ public class XorGate extends Gate {
 
 
     public XorGate() {
-        super("XOR", 2);
+        super("XOR");
 
         nand1 = new NandGate();
         nand2 = new NandGate();
@@ -19,12 +19,7 @@ public class XorGate extends Gate {
 
     @Override
     public boolean read() {
-        boolean a = nand1.read();
-        boolean b = nand2.read();
-        boolean c = nand3.read();
-        boolean d = nand4.read();
-
-        return (d);
+        return (nand4.read());
 
 
     }
