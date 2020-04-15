@@ -4,7 +4,7 @@ public class NotGate extends Gate {
     private final NandGate nand;
 
     public NotGate() {
-        super("NOT");
+        super("NOT", 1);
 
         nand = new NandGate();
     }

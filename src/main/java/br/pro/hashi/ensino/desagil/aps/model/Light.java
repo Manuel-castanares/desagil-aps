@@ -1,11 +1,32 @@
 package br.pro.hashi.ensino.desagil.aps.model;
 
-// --Commented out by Inspection START (4/6/2020 6:03 PM):
-// --Commented out by Inspection START (4/6/2020 6:03 PM):
-////public class Light implements Receiver {
-////    @Override
-////    public void connect(int inputIndex, Emitter emitter) {
-// --Commented out by Inspection STOP (4/6/2020 6:03 PM)
-//    }
-//}
-// --Commented out by Inspection STOP (4/6/2020 6:03 PM)
+import java.awt.*;
+
+public class Light implements Receiver {
+    private Color color;
+    private Emitter emitter;
+
+    public Light(int r, int g, int b) {
+        color = new Color(r, g, b);
+        emitter = null;
+    }
+
+    public Color getColor() {
+        if (emitter != null && emitter.read()) {
+            return color;
+        }
+        return Color.BLACK;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    @Override
+    public void connect(int inputIndex, Emitter emitter) {
+        if (inputIndex != 0) {
+            throw new IndexOutOfBoundsException(inputIndex);
+        }
+        this.emitter = emitter;
+    }
+}
