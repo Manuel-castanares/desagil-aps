@@ -1,6 +1,6 @@
-package br.pro.hashi.ensino.desagil.crossover.view;
+package br.pro.hashi.ensino.desagil.aps.model.view;
 
-import br.pro.hashi.ensino.desagil.crossover.model.Gate;
+import br.pro.hashi.ensino.desagil.aps.model.model.Gate;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -52,6 +52,9 @@ public class View extends JPanel implements ActionListener {
         // tipo ActionListener como parâmetro. É por isso que
         // adicionamos o "implements ActionListener" lá em cima.
         menu.addActionListener(this);
+    }
+
+    private void addGateView(int i) {
     }
 
     // Este método é responsável por adicionar a este JPanel a
