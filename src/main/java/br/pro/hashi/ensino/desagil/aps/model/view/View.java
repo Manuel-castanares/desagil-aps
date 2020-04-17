@@ -54,9 +54,6 @@ public class View extends JPanel implements ActionListener {
         menu.addActionListener(this);
     }
 
-    private void addGateView(int i) {
-    }
-
     // Este método é responsável por adicionar a este JPanel a
     // representação gráfica da calculadora identificada por
     // um índice. Isso consiste em três passos simples.

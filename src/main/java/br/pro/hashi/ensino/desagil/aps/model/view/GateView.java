@@ -88,7 +88,6 @@ public class GateView extends JPanel implements ActionListener{
         } else {
             gate.connect(0,s0);
         }
-
         update();
     }
 }
