@@ -1,5 +1,9 @@
 package br.pro.hashi.ensino.desagil.aps.model.model;
 
+import br.pro.hashi.ensino.desagil.aps.model.model.Emitter;
+import br.pro.hashi.ensino.desagil.aps.model.model.Receiver;
+
+
 import java.awt.*;
 
 public class Light implements Receiver {
